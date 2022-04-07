@@ -9,10 +9,10 @@ export const CommentNewAdd = ({ onChange, handleAddName, onSubmit, submitting, v
         <Input showCount maxLength={20} onChange={handleAddName} value={name} placeholder='Add your name' autoFocus/>
         <br />
         <br />
-        <TextArea showCount maxLength={200} rows={4} onChange={onChange} value={value}/>
+        <TextArea showCount maxLength={200} rows={4} onChange={onChange} value={value} placeholder='Add your comment'/>
       </Form.Item>
       <Form.Item>
-        <Button type="primary" loading={submitting} onClick={onSubmit}>
+        <Button loading={submitting ? true : false} onClick={onSubmit}>
           Add Comment
         </Button>
       </Form.Item>
