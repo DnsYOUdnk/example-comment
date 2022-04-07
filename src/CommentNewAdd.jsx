@@ -12,7 +12,7 @@ export const CommentNewAdd = ({ onChange, handleAddName, onSubmit, submitting, v
         <TextArea showCount maxLength={200} rows={4} onChange={onChange} value={value} placeholder='Add your comment'/>
       </Form.Item>
       <Form.Item>
-        <Button loading={submitting ? true : false} onClick={onSubmit}>
+        <Button loading={submitting} onClick={onSubmit}>
           Add Comment
         </Button>
       </Form.Item>
